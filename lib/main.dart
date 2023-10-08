@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quiz/providers/screen_1_provider.dart';
-import 'package:quiz/ui/screens/screen_1/screen_1.dart';
+import 'package:quiz/providers/screens_provider.dart';
+import 'package:quiz/screens/screen_1/screen_1.dart';
+import 'package:quiz/screens/screen_2/screen_2.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
-    create: (context) => ScreenOneProvider(),
+    create: (context) => ScreensProvider(),
       child: MyApp()));
 }
 
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         ScreenOne.routeName: (_) => ScreenOne(),
+        ScreenTwo.routeName: (_) => ScreenTwo(),
       },
-      initialRoute: ScreenOne.routeName,
+      initialRoute: ScreenTwo.routeName,
     );
   }
 }
