@@ -30,7 +30,7 @@ class _ScreenTwoState extends State<ScreenTwo> {
           unselectedIconTheme: const IconThemeData(color: Colors.grey),
           selectedItemColor: const Color.fromARGB(255, 2, 121, 72),
           items: const [
-            BottomNavigationBarItem(icon: ImageIcon(AssetImage(AppAssetsS2.home)),label: ""),
+            BottomNavigationBarItem(icon: ImageIcon(AssetImage(AppAssetsS2.home)),label: "",),
             BottomNavigationBarItem(icon: ImageIcon(AssetImage(AppAssetsS2.pointer)),label: ""),
             BottomNavigationBarItem(icon: ImageIcon(AssetImage(AppAssetsS2.ra)),label: ""),
             BottomNavigationBarItem(icon: ImageIcon(AssetImage(AppAssetsS2.user)),label: ""),

@@ -36,3 +36,16 @@ class AppAssetsS2
   static const String todo = "${baseImagePath}to.png";
   static const String time = "${baseImagePath}ti.png";
 }
+
+class AppAssetsS3
+{
+  static const String baseImagePath = "assets/screen_3/images/";
+  static const String logo = "${baseImagePath}logo.png";
+  static const String calender = "${baseImagePath}calen.png";
+  static const String chat = "${baseImagePath}chat.png";
+  static const String back = "${baseImagePath}back.png";
+  static const String sec = "${baseImagePath}sec.png";
+  static const String topic_1 = "${baseImagePath}topic1.png";
+  static const String topic_2 = "${baseImagePath}topic2.png";
+  static const String doctor = "${baseImagePath}Doctor.png";
+}

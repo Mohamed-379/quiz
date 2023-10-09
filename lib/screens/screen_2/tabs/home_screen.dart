@@ -52,52 +52,58 @@ class HomeScreenTwoState extends State with SingleTickerProviderStateMixin
             Container(
               padding: const EdgeInsets.all(18),
               color: const Color.fromARGB(255, 246, 247, 250),
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          ImageIcon(AssetImage(AppAssetsS2.heart),
-                              color: Color.fromARGB(255, 112, 122, 187)),
-                          Text("Heart Rate")
-                        ],
-                      ),
-                      SizedBox(height: 8,),
-                      Text("81BPM", style: TextStyle(fontSize: 16
-                      ,fontWeight: FontWeight.bold),)
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          ImageIcon(AssetImage(AppAssetsS2.todo),
-                              color: Color.fromARGB(255, 112, 122, 187)),
-                          Text("To-do")
-                        ],
-                      ),
-                      SizedBox(height: 8,),
-                      Text("32,5%", style: TextStyle(fontSize: 16
-                          ,fontWeight: FontWeight.bold),)
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          ImageIcon(AssetImage(AppAssetsS2.calo),
-                              color: Color.fromARGB(255, 112, 122, 187)),
-                          Text("calo")
-                        ],
-                      ),
-                      SizedBox(height: 8,),
-                      Text("1000Cal", style: TextStyle(fontSize: 16
-                          ,fontWeight: FontWeight.bold),)
-                    ],
-                  ),
-                ],
+              child: const IntrinsicHeight(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            ImageIcon(AssetImage(AppAssetsS2.heart),
+                                color: Color.fromARGB(255, 112, 122, 187)),
+                            Text("Heart Rate")
+                          ],
+                        ),
+                        SizedBox(height: 8,),
+                        Text("81BPM", style: TextStyle(fontSize: 16
+                        ,fontWeight: FontWeight.bold),)
+                      ],
+                    ),
+                    VerticalDivider(thickness: 2.0,color: Color.fromARGB(
+                        255, 203, 203, 203)),
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            ImageIcon(AssetImage(AppAssetsS2.todo),
+                                color: Color.fromARGB(255, 112, 122, 187)),
+                            Text("To-do")
+                          ],
+                        ),
+                        SizedBox(height: 8,),
+                        Text("32,5%", style: TextStyle(fontSize: 16
+                            ,fontWeight: FontWeight.bold),)
+                      ],
+                    ),
+                    VerticalDivider(thickness: 2.0,color: Color.fromARGB(
+                        255, 203, 203, 203),),
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            ImageIcon(AssetImage(AppAssetsS2.calo),
+                                color: Color.fromARGB(255, 112, 122, 187)),
+                            Text("calo")
+                          ],
+                        ),
+                        SizedBox(height: 8,),
+                        Text("1000Cal", style: TextStyle(fontSize: 16
+                            ,fontWeight: FontWeight.bold),)
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
             const SizedBox(height: 18,),
@@ -107,7 +113,7 @@ class HomeScreenTwoState extends State with SingleTickerProviderStateMixin
             TabBar(
               controller: controller,
               labelColor: const Color.fromARGB(255, 112, 122, 187),
-              unselectedLabelColor: Colors.black,
+              unselectedLabelColor: const Color.fromARGB(155, 79, 79, 79),
               indicatorColor: const Color.fromARGB(255, 112, 122, 187),
               tabAlignment: TabAlignment.center,
               tabs: const [

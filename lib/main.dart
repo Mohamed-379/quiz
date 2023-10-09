@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:quiz/providers/screens_provider.dart';
 import 'package:quiz/screens/screen_1/screen_1.dart';
 import 'package:quiz/screens/screen_2/screen_2.dart';
+import 'package:quiz/screens/screen_3/screen_3.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -18,8 +19,9 @@ class MyApp extends StatelessWidget {
       routes: {
         ScreenOne.routeName: (_) => ScreenOne(),
         ScreenTwo.routeName: (_) => ScreenTwo(),
+        ScreenThree.routeName: (_) => ScreenThree(),
       },
-      initialRoute: ScreenTwo.routeName,
+      initialRoute: ScreenOne.routeName,
     );
   }
 }
